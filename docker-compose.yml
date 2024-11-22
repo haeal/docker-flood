@@ -7,7 +7,7 @@ services:
       dockerfile: rtorrent.dockerfile
     restart: always
     volumes:
-      - ./downloads:/data/downloads
+      - /data/rtorrent-downloads:/data/downloads
       - sock:/data
     ports:
       - 6881:6881
@@ -31,7 +31,7 @@ services:
       - FLOOD_SECRET=flood
     restart: always
     volumes:
-      - ./downloads:/data/downloads
+      - /data/rtorrent-downloads:/data/downloads
       - sock:/data
 
 volumes:
