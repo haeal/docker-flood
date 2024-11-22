@@ -99,9 +99,9 @@ method.insert = d.session_file, simple, "cat=(session.path), (d.hash), .torrent"
 
 ## Watch directories (add more as you like, but use unique schedule names)
 ## Add torrent
-schedule2 = watch_load, 11, 10, ((load.verbose, (cat, (cfg.watch), "load/*.torrent")))
+#schedule2 = watch_load, 11, 10, ((load.verbose, (cat, (cfg.watch), "load/*.torrent")))
 ## Add & download straight away
-schedule2 = watch_start, 10, 10, ((load.start_verbose, (cat, (cfg.watch), "start/*.torrent")))
+#schedule2 = watch_start, 10, 10, ((load.start_verbose, (cat, (cfg.watch), "start/*.torrent")))
 
 
 ## Run the rTorrent process as a daemon in the background
